@@ -1,0 +1,425 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- fontawesome link here -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    
+    <!-- style link here -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #2a6c56);
+        }
+        
+        .login-box {
+            position: absolute;
+            top: 67%;
+            left: 78%;
+            width: 350px;
+            height: 350px;
+            margin: 20px 0;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 78%);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        
+        .login-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .login-box .user-box {
+            position: relative;
+        }
+        
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+        }
+        
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0;
+            color: #03f484;
+            font-size: 12px;
+        }
+        
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03f484;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+            color: white;
+    
+        }
+        
+        .login-box a:hover {
+            background: #03f484;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+        }
+        
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+        
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03f484);
+            animation: btn-anim1 1s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03f484);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(3) {
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03f484);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03f484);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header" id="top">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#quality">Food Quality</a>
+            <a href="#gallary">Gallery</a>
+            <a href="#our-menu">Our Menu</a>
+         </nav>
+         
+
+        <div class="icons">
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a class="contact-btn"><a href="Feedback3.html">Feedback</a>
+        </div>
+
+    </header>
+
+    <div id="home" class="home">
+
+        <div class="main-home">
+            <div class="home-inner-content">
+                <div class="home-image">
+                <img src="images/background content.png" alt="">
+                </div>
+            </div>
+
+            <div class="home-inner-content">
+                <div class="home-text-content">
+                <h1>contact us for best break fast</h1>
+                <p>The Company Itself Is A Very Successful Company. Rejected, The Pleasure Of The Duties Which He Spares Him, May Be More Severe Than Those Who Deserve It</p>
+                <a href="D:\Breakfast website\invoice.html">Billing</a>
+                </div>
+            </div>
+            <div class="login-box">
+                <h2>Login Form</h2>
+                <form action="">
+                    <div class="user-box">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Submit
+                    </a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="about" class="about">
+        <div class="main-about">
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <img class="myimageabout" src="images/About us.png" alt="">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <div class="about-text-content">
+                        <h1>About us</h1>
+                        <p> The Company Itself Is A Very Successful Company. They Are Supposed To Be Right, They Don't Know What To Look For, They Don't Know What To Do! I Will Explain The Pains Of Insight To Provide For The Resilience Of All The Pleasures Of The Flight Mode. The Company Itself Is A Very Successful Company. As If, Except For The Pains And Duties Of Others, And The Like, The Needs Of The Blessed Ones, Here, Have Made Him Worthy Of Some Kind</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quality" class="quality">
+        <div class="main-quality">
+            <div class="main-inner-quality">
+                <div class="quality-content">
+                    <h1>Our food quality</h1>
+                    <p>It Is Very Important For The Customer To Pay Attention To The Adipiscing Process. What Flexibility The Blinded Architect Of The Body Escapes From Great Trouble, So Happy Trouble Which, They Do Not Know Why? Troubles, From The Mistake Of Life To Make Who Who. The Company Itself Is A Very Successful Company. Therefore, Every Advantage Must Be Spared, Because They Are The Least Of Any Kind. They Are Born Of Great Hardships, The Pain Will Be Criticized, The Exercise Will Be Followed, They Do Not Know The Mistake, He Hates The Right</p>
+
+                </div>
+            </div>
+
+            <div class="main-inner-quality">
+                <div class="quality-content qulity-image">
+                    <img src="images/egg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="gallary" class="gallery">
+
+        <h1>Gallery</h1>
+
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery1.png" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery2.png" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery3.png" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery4.png" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery5.png" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="images/gallery6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="enjoy-our-food">
+
+        <div class="food-main-content">
+            <h1>enjoy our food</h1>
+            <p>The Customer Himself, The Customer Will Be Able To Pursue The Adipiscing Of The Company. Indeed, It Is Our Fault That We Bear The Burden Of Being Freed Often, For Will It Happen That He Wants Regular Training, The Troubles Of A Wise Man? Here And There. Let It Be The Pleasure Of The Incident Itself.</p>
+        </div>
+
+    </div>
+
+    <div id="our-menu" class="our-menu-food">
+        <h1>our menu</h1>
+
+        <div class="main-menu-food">
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="images/menu2.png" alt="">
+
+                    <div class="menu-food-text">
+                        <h2>sauce mashroom</h2>
+                        <p>Those Times Of Trouble And Sorrow, Which Are Worthy Of A Just Architect Of The Soul, To Be Repelled! Ab, It Is A Pleasure</p>
+                        <p> <span>Price / $1.2</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="images/mwnu1.png" alt="">
+
+                    <div class="menu-food-text">
+                        <h2>italian mashroom</h2>
+                        <p> Those Times Of Trouble And Sorrow, Which Are Worthy Of A Just Architect Of The Soul, To Be Repelled! Ab, It Is A Pleasure </p>
+                        <p> <span>Price / $1.2</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="images/menu3.png" alt="">
+
+                    <div class="menu-food-text">
+                        <h2> mixed sauce mashroom</h2>
+                        <p> Those Times Of Trouble And Sorrow, Which Are Worthy Of A Just Architect Of The Soul, To Be Repelled! Ab, It Is A Pleasure</p>
+                        <p> <span>Price / $1.2</span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="before">
+        <img src="images/before footer.jpg" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="main-footer">
+            <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+        </div>
+
+        <footernav class="footer-navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">food Quality</a>
+            <a href="#">Food Gallary</a>
+            <a href="#">Our Menu</a>
+        </footernav>
+
+    </div>
+
+
+
+
+
+
+
+<!-- scroll reveal javascript link -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- javascript link here -->
+
+<script src="script.js"></script>
+<script>
+    alert("Form Submitted!!!!")
+</script>
+</body>
+</html>
